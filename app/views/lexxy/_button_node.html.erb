@@ -1,0 +1,19 @@
+<template id="button-node-template">
+  <div class="lexxy-button-node" contenteditable="false">
+    <div class="lexxy-button-node__preview">
+      <a class="lexxy-button" href="#" data-button-node-target="link">Add button text</a>
+    </div>
+
+    <div class="lexxy-button-node__panel">
+      <label class="lexxy-button-node__label">
+        Button text
+        <input type="text" class="lexxy-button-node__input" placeholder="Add button text" data-button-node-target="textInput">
+      </label>
+
+      <label class="lexxy-button-node__label">
+        Button URL
+        <input type="url" class="lexxy-button-node__input" placeholder="https://example.com" data-button-node-target="linkInput">
+      </label>
+    </div>
+  </div>
+</template>

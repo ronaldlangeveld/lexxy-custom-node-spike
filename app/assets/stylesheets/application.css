@@ -1,0 +1,94 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+
+/* Button Node */
+.lexxy-button-node {
+  display: flex;
+  align-items: stretch;
+  border: 2px dashed #4ade80;
+  border-radius: 4px;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.lexxy-button-node__preview {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 80px;
+}
+
+.lexxy-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #f472b6;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: default;
+}
+
+.lexxy-button-node__panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: #f9fafb;
+  border-left: 1px solid #e5e7eb;
+  min-width: 260px;
+}
+
+.lexxy-button-node__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.lexxy-button-node__input {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.85rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #fff;
+  color: #374151;
+  outline: none;
+}
+
+.lexxy-button-node__input:focus {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 2px rgba(147, 197, 253, 0.4);
+}
+
+.lexxy-button-node__input::placeholder {
+  color: #9ca3af;
+}
+
+/* Button Block - read-only rendered output */
+.lexxy-button-rendered {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.lexxy-button-rendered .lexxy-button {
+  cursor: pointer;
+}
+
+.lexxy-button-rendered .lexxy-button:hover {
+  background-color: #ec4899;
+}
