@@ -82,6 +82,13 @@ export class ButtonNode extends CustomActionTextAttachmentNode {
     // Prevent navigation on click
     link.addEventListener("click", (e) => e.preventDefault())
 
+    // Stop keyboard events from bubbling to Lexical — without this,
+    // Backspace on an empty input deletes the entire node, Enter
+    // creates a new paragraph, etc.
+    const stopPropagation = (e) => e.stopPropagation()
+    textInput.addEventListener("keydown", stopPropagation)
+    linkInput.addEventListener("keydown", stopPropagation)
+
     // Sync text input to node and preview
     textInput.addEventListener("input", (e) => {
       editor.update(() => {

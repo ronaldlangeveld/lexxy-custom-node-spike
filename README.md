@@ -1,6 +1,16 @@
 # Lexxy Custom Node Spike
 
-A sample Rails 8.1 app demonstrating how to add a custom block (node) to the [Lexxy](https://github.com/basecamp/lexxy) rich text editor. Uses a **Button block** as the example — a styled CTA button with editable text and URL.
+A sample Rails 8.1 app showing how to add a custom block (node) to [Lexxy](https://github.com/basecamp/lexxy) in a Rails 8.1 app. It uses a **Button block** as the example.
+
+This project focuses on the **implementation pattern** — the styling is intentionally minimal and can be done however you like.
+
+### Editor view
+
+![Button block in the Lexxy editor](screenshots/visual_editor.png)
+
+### Rendered output
+
+![Rendered button on the page](screenshots/rendered_example.png)
 
 ## Setup
 
